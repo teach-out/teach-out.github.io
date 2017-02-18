@@ -1,0 +1,72 @@
+<html><head><link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+</head><body><dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+        @apply(--layout-vertical);
+      }
+      paper-card {
+        --paper-card-header-color: #fff;
+        max-width: 640px;
+      }
+      .rotate {
+        transform: rotate(-180deg);
+      }
+    </style>
+
+    
+      
+      
+      
+      
+    
+
+    <paper-card heading="Quick Question Here" image="./images/trip.png" alt="Sailboat Harbor" class="white small-card">
+      <div class="card-content">1-line description here</div>
+      <div class="card-actions">
+        <paper-button>Yes</paper-button>
+        <paper-button>No</paper-button>
+        <paper-icon-button icon="my-icons:expand-more" title="more info" on-tap="toggle" style="float:right" class="rotate ease">
+        </paper-icon-button>
+        <iron-collapse>
+          Longer description here. Can include multimedia.
+        </iron-collapse>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Good tone?" image="./images/trip.png" alt="Sailboat Harbor" class="white small-card">
+      <div class="card-content">Term Gestation, Breathing or Crying?</div>
+      <div class="card-actions">
+        <paper-button>Yes</paper-button>
+        <paper-button>No</paper-button>
+        <paper-icon-button icon="my-icons:expand-more" title="more info" on-tap="toggle" style="float:right" class="rotate ease">
+        </paper-icon-button>
+        <iron-collapse>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim ante, tempus eget volutpat ac, cursus ac ante. Nulla facilisi. Praesent sed lacinia ligula. Donec malesuada nisl eget quam iaculis, vel placerat justo cursus.
+        </iron-collapse>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Good tone?" image="./images/trip.png" alt="Sailboat Harbor" class="white small-card">
+      <div class="card-content">Term Gestation, Breathing or Crying?</div>
+      <div class="card-actions">
+        <paper-button>Yes</paper-button>
+        <paper-button>No</paper-button>
+        <paper-icon-button icon="my-icons:expand-more" title="more info" on-tap="toggle" style="float:right" class="rotate ease">
+        </paper-icon-button>
+        <iron-collapse>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim ante, tempus eget volutpat ac, cursus ac ante. Nulla facilisi. Praesent sed lacinia ligula. Donec malesuada nisl eget quam iaculis, vel placerat justo cursus.
+        </iron-collapse>
+      </div>
+    </paper-card>
+
+  </template>
+
+  <script>Polymer({is:"my-view1",toggle:function(t){t.target.toggleClass("rotate"),t.target.nextElementSibling.toggle()}});</script>
+</dom-module>
+</body></html>

@@ -1,0 +1,19 @@
+{
+  "appTitle": "TeachOut!",
+  "card1": [
+    "img/my-img1.png",
+    "Header Title",
+    "Short Description",
+    "Long Description",
+    "Yes",
+    "No"
+  ],
+  "card2": [
+    "img/my-img2.png",
+    "Header Title",
+    "Short Description",
+    "Long Description",
+    "Yes",
+    "No"
+  ]
+}
